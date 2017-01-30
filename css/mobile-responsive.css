@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS document written by Harish Kohli */
+
+@media all and (max-width:480px){
+iframe{width:300px;height:215px;}
+}
+
+@media all and (max-width:767px){
+body{}
+.wrap{ width:100%; display:block;}
+.content {font-size:11px; line-height:16px; text-align:justify;}
+.content p{ line-height:18px; font-size:13px;}
+.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{ width:100%;}
+.col-sm-4{width:80%;}
+.footer1{padding:0px;}
+.social{display:none;}
+.mobRow{ width:100%;}
+.mobPaddingNone{ padding:0px!important;}
+.mobMarginNone{ margin:0px!important;}
+.mobmarginBtm30{ margin-bottom:30px;}
+.mobAlignCenter{ text-align:center;}
+.mobAlignJustify{ text-align:justify;}
+.mobAlignLeft{ text-align:left;}
+.mobmarginTop{ margin-top:10px;}
+.mobDivCenter{ margin:0 25% 10px; float:none; display:block; width:50%;}
+.mobwidth{margin:0 15% 10px; width:70%;}
+.moblineheight{ line-height:20px;}
+.mobGap{ padding:0px;}
+.mob10{ width:10%;}
+.mob20{ width:20%;}
+.mob30{ width:30%;}
+.mob40{ width:40%;}
+.mob50{ width:50%;}
+.mob60{ width:60%;}
+.mob70{ width:70%;}
+.mob80{ width:80%;}
+.mob90{ width:90%;}
+.mobDisplayNone{ display:none;}
+
+/*theme style*/
+.link{ height:20px; margin:0px;}
+.link span{ display:none;}
+.moblogosetting{ width:88%; padding:2px 0px;}
+.logoBox{ width:100%;}
+#menu{ display:none; margin:0px!important;}
+.mobmenuIcon{ margin:20px 0px 0px 7px; display:block;}
+#menu li{ width:100%;}
+.Menusubnav, .menuArrownav{ display:none!important;}
+#menu li a{ width:97%;}
+.bestDealBox{ display:none;}
+
+.servicesBox{ width:100%;}
+.subtitlePanel{ width:100%; font-size:14px;}
+.servicesBox a{ width:47.4%;}
+
+.div-on-Center{ width:100%;}
+.titlePanel img{ width:100%; height:100%;}
+.itemPanel{ width:94%; margin-left:3%; margin-right:3%;}
+.ourpartnerBox{ width:50%; font-size:20px; padding:30px 30px 30px 0px;}
+.ourpartnercontentBox{ width:50%;}
+.quickApplyPanel{ padding:10px;}
+.quickApplyContentBox{ padding:20px; background:#a0b7d3 url("http://www.loanmoney.in/images/quick-apply-bg.png") repeat-x scroll 0 bottom/100% 100%;}
+.quaterSection{ width:100%;}
+.quickApplytitle{ margin:10px 0px 0px; background:none; line-height:30px; font-size:20px; padding:0px; text-align:left;}
+.padngTop.black{ width:90%; padding:0px;}
+#captchaimg{ width:100%; height:30px;}
+.testiBg{ display:none;}
+.marquee0 div:first-child{width:100px;}
+footer.row{ padding:10px; width:100%; box-sizing:border-box;}
+.seprater{ background:none;}
+.socialMedia{ display:none;}
+.footer-lwr{ width:100%; margin:0px 0px 0px -10px; padding:0px 10px 0px 0px;}
+
+.bodySection{ padding:10px 12px; box-sizing:border-box;}
+.sal:before{ content:"Salaried : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+.se:before{ content:"Self Employed : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+.pro:before{ content:"Professional : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+
+.floating:before{ content:"Floating Interest Rate : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+.process:before{ content:"Processing Fee : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+.features:before{ content:"Features : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+
+.lapinterest:before{ content:"Rate of Interest : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+.laploantype:before{ content:"Loan for types of properties : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+
+
+.laptype:before{ content:"Type of Loan : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+.laproi:before{ content:"ROI /PF/IMD : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+.lapmax:before{ content:"Max & Min Amt. : "; font-weight:bold; text-transform:lowecase; color:#cb151b;}
+}
+
+
+
+@media all and (min-width:768px) and (max-width:1024px){
+.wrap{width:100%; padding:0px 10px; box-sizing:border-box;}
+.upprWrap{ height:580px;}
+.servicePanel a{ width:100%; padding:10px 0px;}
+.callBox{ margin:65px 0px 0px;}
+.callBox img{ margin:0px -5px 1px 0px;}
+.callNumbr{ margin:17px auto 0px;}
+.imgBox{ margin:0 10px 0 0;}
+.imgBox img{ width:45px; height:45px;}
+.caption{ font-size:12px; line-height:45px; font-weight:normal;}
+.link{ width:100%; margin-bottom:5px; box-sizing:border-box; border-right:none;}
+.mobsetingCall{ display: table; float: none; left: 0; margin: 0 auto; padding: 0; position: absolute; right: 0;}
+.subtitle{ width:20%; padding:0px; margin:-40px 40% 0;}
+.captionInnerSM{ font-size:13px; padding:32px 0px 0px;}
+.paddingRightExtra{ padding-right:20px;}
+.paddingLeftExtra{ padding-left:20px;}
+.imgBoxInnerSM{ width:25%; margin:12px 5px 0px 0px;}
+.imgBoxInnerSM img{ width:100%;}
+.titleBox{ width:78%;}
+.servicebtn{ margin:25px 0px 0px;}
+}

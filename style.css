@@ -32,3 +32,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .footer-stip-3{
     background-color: #66CCFF;
 }
+.footer-banks ul li:first-child {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.footer-banks ul li {
+    float: left;
+    color: #cb151b;
+}
+
+.content-panel-2{
+background: url(images/testi-bg.png) right 0 scroll repeat-y #605f5f;
+}

@@ -32,37 +32,54 @@ function add_theme_scripts() {
  * 
  */
 
-function footer_copyright() {
+function loan_widget() {
 
     register_sidebar(array(
         'name' => 'copyright',
-        'id' => 'copyright', 
+        'id' => 'copyright',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
     ));
 
     register_sidebar(array(
-        'name'=>'footerstrip-2',
-        'id'=>'footerstrip-2',
-        'before_widget'=>'<div class="col-md-6">',
-        'after_widget'=>'</div>',
+        'name' => 'footerstrip-2',
+        'id' => 'footerstrip-2',
+        'before_widget' => '<div class="col-md-6">',
+        'after_widget' => '</div>',
     ));
-    
+
     register_sidebar(array(
         'name' => 'disclaimer',
-        'id' => 'disclaimer', 
+        'id' => 'disclaimer',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
     ));
     register_sidebar(array(
         'name' => 'footerstrip-referece',
-        'id' => 'footerstrip-referece', 
+        'id' => 'footerstrip-referece',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
     ));
-    
-    
-    
+    register_sidebar(array(
+        'name' => 'footer-content',
+        'id' => 'footer-content',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+    ));
+    register_sidebar(array(
+        'name' => 'home-content-panel-2',
+        'id' => 'home-content-panel-2',
+        'before_widget' => '<div class="col-md-6">',
+        'after_widget' => '</div>',
+    ));
+}
+
+function loan_logos() {
+    add_theme_support('loan_logo', array(
+        'height' => 200,
+        'width' => 400,
+        'flex-width' => TRUE,
+    ));
 }
 
 /*
@@ -71,9 +88,11 @@ function footer_copyright() {
  * if website is live value set false 
  * on local environment value is set to true so that default temaplte is viewable with dummy text
  */
-function is_localhost(){   
+
+function is_localhost() {
     return true;
     #return false; # for live server
 }
 
-add_action('widgets_init', 'footer_copyright');
+add_action('widgets_init', 'loan_widget');
+add_action('after_setup_theme', 'loan_logos');

@@ -9,6 +9,16 @@
         </div>
         <div class="top-2 top-bg">
             <div class="container">
+                
+		<?php if ( has_nav_menu( 'header-menu' ) ) : ?>
+			<div class="navigation-top">
+				<div class="wrap">
+					<?php wp_nav_menu(array('theme_location'=>'header-menu')); ?>
+				</div><!-- .wrap -->
+			</div><!-- .navigation-top -->
+		<?php endif; ?>
+                        
+                
 
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -23,7 +33,7 @@
                         loan_logo();
 	}
                     ?></a>
-                </div>
+                </div><!--
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
@@ -42,7 +52,7 @@
                             </ul>
                         </li>
                     </ul>
-                </div>                
+                </div>   -->             
 
             </div>
         </div>

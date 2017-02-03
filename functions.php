@@ -74,6 +74,10 @@ function loan_widget() {
     ));
 }
 
+function register_loanmenu(){
+    register_nav_menu('header-menu',__('Header Menu'));
+}
+
 function loan_logos() {
     add_theme_support('loan_logo', array(
         'height' => 200,
@@ -93,6 +97,6 @@ function is_localhost() {
     return true;
     #return false; # for live server
 }
-
+add_action('init','register_loanmenu');
 add_action('widgets_init', 'loan_widget');
 add_action('after_setup_theme', 'loan_logos');

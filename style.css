@@ -24,13 +24,36 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Normalizing styles have been helped along thanks to the fine work of
  * Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  */
-
-
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+body{
+font-family: 'Open Sans', sans-serif;
+}
 .top-bg{
-    background-color: red;
+    background-color: #144092;
+}
+h1.rdt-heading{
+color:#006ab6;
+padding-left:16px;
+padding-bottom:10px;
+margin-top:0px;
+margin-bottom:20px;
+border-bottom:1px solid #ccc;
 }
 .footer-stip-3{
-    background-color: #66CCFF;
+	padding:20px;
+	text-align:center;
+    background-color: #021B79;
+   color:#fff;
+	font-size:12px;
+background: #0575E6; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #0575E6 , #021B79); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #0575E6 , #021B79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.footer-stip-3 a{
+color:#ddd;
+
 }
 .footer-banks ul li:first-child {
     margin-right: 10px;
@@ -40,7 +63,251 @@ Use it to make something cool, have fun, and share what you've learned with othe
     float: left;
     color: #cb151b;
 }
+.footer-content{
+background-color:#ccc;
+background-image:url('images/asanoha-400px.png');
+font-family: 'PT Serif', serif;
+
+padding-bottom:20px;
+}
+.bg-footer-content{
+background-color:rgba(255,255,255,0.3);
+padding:10px;
+}
+.footer-content h2{
+padding:0 0 10px 0;
+color:#084596;
+font-weight:bold;
+border-bottom:1px dotted #ccc;
+}
+.footer-content a{
+color:#444;
+}
+.footer-content > a:hover{
+color:#fff;
+}
 
 .content-panel-2{
-background: url(images/testi-bg.png) right 0 scroll repeat-y #605f5f;
+background-color:#006AB6;
+color:#fff;
+font-family: 'PT Serif', serif;
+text-align:justify;
+padding:20px 0;
+padding-bottom:40px;
+}
+
+/*
+.navigation-top {
+    font-size: 16px;
+    color: #d3d3d3;
+    float: left;
+    margin: 0px 0px 0px 20px;
+}*/
+#menu-header-menu > li {
+    list-style: none;
+    float: left;
+    position: relative;
+    padding: 22px 0px;
+}
+#menu-header-menu > li > a{
+color:#fff;
+padding:10px;
+}
+#menu-header-menu > li ul li{
+list-style:none;
+padding:10px;
+border-bottom:1px inset #ddd;
+}
+#menu-header-menu > li ul li a{
+color:#444;
+}
+
+
+#menu-header-menu li .sub-menu {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: dashed 1px #b10a5c;
+    display: none;
+    left: 0;
+    opacity: 0.99;
+    padding: 0px 25px 25px 15px;
+    position: absolute;
+    top: 64px;
+    width: 300px;
+    z-index: 999;
+    min-height: 200px;
+}
+
+#menu-header-menu li:hover ul{
+display:block;
+position:absolute;
+z-index:5000;
+}
+.top-4{
+
+padding-top:20px;
+padding-bottom:20px;
+min-height:400px;
+}
+h1.rdt-heading{
+font-family: 'PT Serif', serif;
+}
+p{
+text-align:justify;
+}
+.row{
+margin-right:0px !important;
+margin-left:0px !important;
+}
+#footer-contents h2{
+	font-size:16px;
+}
+#footer-contents li{
+	list-style:none;
+	margin:0px;
+}
+#footer-contents .menu{
+margin:0px;
+padding:0px;
+}
+.footer-reference{
+padding:20px;
+
+font-family: 'PT Serif', serif;
+background: #0575E6; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #0575E6 , #021B79); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #0575E6 , #021B79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+color:#eee;
+}
+.footer-reference a{
+color:#eee;
+}
+.footer-reference a:hover{
+color:#fff;
+}
+.footer-reference .loan_strong{
+color:#fff;
+font-weight:bold;
+}
+.footer-stip-2{
+
+
+background: #0575E6; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #0575E6 , #021B79); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #0575E6 , #021B79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'PT Serif', serif;
+color:#ccc;        
+padding:20px;
+}
+.visual-form-builder fieldset{
+background-color:none !important;
+margin:0px !important;
+border:none !important;
+}
+form.visual-form-builder{
+margin-top:0px !important;
+background-color:none !important;
+}
+.form-outline{
+
+background-color:none !important;
+}
+.breadcrumb-container .separator{
+font-size:14px;
+/*color:#0575E6;*/
+color:#000
+}
+
+.breadcrumb-container li a{
+/*background-color:#0575E6;*/
+line-height:8px;
+border-radius:4px;
+color:#000;
+}
+ul#menu-sidebar_menu_1 a{
+color:#000;
+}
+ul#menu-sidebar_menu_1 li{
+list-style:none;
+padding:10px;
+border-bottom:1px dashed #ddd;
+margin:4px;
+}
+ul#menu-sidebar_menu_1 li > ul{
+/*display:none;*/
+}
+/*
+ul#menu-sidebar_menu_1 li:hover ul{
+display:block;
+position:absolute;
+}*/
+#maintext .col-sm-8,#maintext .col-sm-9{
+line-height:20px;
+text-align:justify;
+}
+#maintext .col-sm-8 li{
+line-height:24px;
+margin-bottom:10px;
+}
+.rtbs_menu li{
+background-color:#ccc;
+margin:2px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+.rtbs_menu li.current{
+	background-color:#021B79;
+}
+.tableStyle td{
+padding:5px !important;
+}
+.rtbs_content h1{
+font-size:24px;
+}
+.rtbs_content {
+border-top:1px solid #ccc !important;
+border:1px solid #ddd;
+}
+
+
+
+
+
+
+
+.itemPanel {
+    width: 100%;
+    margin: 50px 1.2% 15px;
+    background: url(https://www.loanmoney.in/images/item-bg.png) 0 0 scroll repeat-x;
+    border-radius: 15px;
+    border: solid 1px #dde7f0;
+    box-sizing: border-box;
+    float:left;
+}
+.imgBox {
+    background: url(https://www.loanmoney.in/images/product-bg.png) center 0 scroll no-repeat;
+    height: 90px;
+    margin: -50px 0px 0px;
+    text-align: center;
+    padding: 30px 0px 0px;
+}
+.headingPanel {
+    width: 106%;
+    margin: 0px 0px 0px -3%;
+    padding: 0px 0px 3px;
+    background: url(images/headingPanel.png) center 0/100% 100% scroll no-repeat;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: headingFont;
+}
+.itemContent {
+    padding: 10px 7% 10px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+}
+.btnPanel {
+    width: 80%;
+    margin: 0px 10% 10px;
 }

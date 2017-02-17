@@ -1,6 +1,7 @@
 <html>
     <head>
-        <?php wp_head(); ?>        
+        <?php wp_head(); ?>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">       
     </head>
 
     <body> 
@@ -13,16 +14,30 @@
                 <?php $customid=get_theme_mod( 'custom_logo');$image = wp_get_attachment_image_src( $customid , 'full' );$logourl=$image[0]; ?>
 		<?php if ( has_nav_menu('header-menu') ) : ?>
 			<div class="navigation-top">
-				<div class="col-sm-4" >
+				<div class="col-lg-4 col-md-3 col-sm-4" >
 					<?php if(get_theme_mod('custom_logo')): ?>
-						<a href="http://localhost/loanmoney"><img src="<?php echo $logourl; ?>" /></a>
+						<a href="http://localhost/loanmoney"><img src="<?php echo $logourl; ?>" style="max-width:300px;width:100%;" /></a>
 					<?php else: ?>
 						
 					<?php endif; ?>
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
 				</div>
-				<div class="col-sm-8">
+
+				</div>
+				<div class="col-lg-8 col-md-12 col-sm-12">
 				<div class="wrap">
-					<?php wp_nav_menu(array('theme_location'=>'header-menu')); ?>
+
+
+          			<div id="navbar" class="navbar-collapse collapse">
+					<?php wp_nav_menu(array('theme_location'=>'header-menu','menu_class'=> 'nav navbar-nav','walker' => new Radiate_Walker(),)); ?>
+				</div>
 				</div><!-- .wrap -->
 				</div>
 			</div><!-- .navigation-top -->

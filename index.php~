@@ -16,9 +16,9 @@
 		<div class="itemContent">Personal Loan is an unsecured loan given to borrower against his Income and credit...
 		</div>
 		<div class="btnPanel">
-		<a href="<?php echo site_url(); ?>/personal-loan/" class="btn primary-btn">More+</a>
-		<a href="<?php echo site_url(); ?>/personal-loan-interest-rates.php" class="btn primary-btn">Compare Interest Rate</a>
-		<a href="https://www.loanmoney.in/apply-personal-loan.php" class="btn secondry-btn">Apply Now !!</a>
+		<a href="<?php echo site_url(); ?>/personal-loan/" class="btn btn1">More+</a><br>
+		<a href="<?php echo site_url(); ?>/personal-loan-interest-rates.php" class="btn btn2">Compare Interest Rate</a><br>
+		<a href="https://www.loanmoney.in/apply-personal-loan.php" class="btn btn3">Apply Now !!</a><br>
 		</div>
 		</div>
 	</div>
@@ -30,9 +30,9 @@
 		<div class="headingPanel">Home Loan</div>
 		<div class="itemContent">Quick and Easy Home loan, a secured mortgage loan for your home / house needs careful...</div>
 		<div class="btnPanel">
-		<a href="<?php echo site_url(); ?>/home-loan.php" class="btn primary-btn">More+</a>
-		<a href="<?php echo site_url(); ?>/home-loan-interest-rates.php" class="btn primary-btn">Compare Interest Rate</a>
-		<a href="<?php echo site_url(); ?>/apply-home-loan.php" class="btn secondry-btn">Apply Now !!</a>
+		<a href="<?php echo site_url(); ?>/home-loan.php" class="btn btn1">More+</a><br>
+		<a href="<?php echo site_url(); ?>/home-loan-interest-rates.php" class="btn btn2">Compare Interest Rate</a><br>
+		<a href="<?php echo site_url(); ?>/apply-home-loan.php" class="btn btn3">Apply Now !!</a><br>
 		</div>
 		</div>
 		<!-- /Home Loan -->
@@ -44,9 +44,9 @@
 		<div class="headingPanel">Loan Against Property</div>
 		<div class="itemContent">A loan against property (LAP) is a good alternative if you need capital. Your property...</div>
 		<div class="btnPanel">
-		<a href="<?php echo site_url(); ?>/loan-against-property.php" class="btn primary-btn">More+</a>
-		<a href="<?php echo site_url(); ?>/loan-against-property-interest-rates.php" class="btn primary-btn">Compare Interest Rate</a>
-		<a href="<?php echo site_url(); ?>/apply-loan-against-property.php" class="btn secondry-btn">Apply Now !!</a>
+		<a href="<?php echo site_url(); ?>/loan-against-property.php"class="btn btn1" >More+</a><br>
+		<a href="<?php echo site_url(); ?>/loan-against-property-interest-rates.php" class="btn btn2">Compare Interest Rate</a><br>
+		<a href="<?php echo site_url(); ?>/apply-loan-against-property.php" class="btn btn3">Apply Now !!</a><br>
 		</div>
 		</div>
 		<!-- /Loan against proprty -->
@@ -58,9 +58,9 @@
 		<div class="headingPanel">Business Loan</div>
 		<div class="itemContent">Running a business is never an easy task. One is bound to face financial hiccups. </div>
 		<div class="btnPanel">
-		<a href="<?php echo site_url(); ?>/business-loan.php" class="btn primary-btn">More+</a>
-		<a href="<?php echo site_url(); ?>/business-loan-interest-rates.php" class="btn primary-btn">Compare Interest Rate</a>
-		<a href="<?php echo site_url(); ?>/apply-business-loan.php" class="btn secondry-btn">Appy Now !!</a>
+		<a href="<?php echo site_url(); ?>/business-loan.php" class="btn btn1">More+</a><br>
+		<a href="<?php echo site_url(); ?>/business-loan-interest-rates.php" class="btn btn2">Compare Interest Rate</a><br>
+		<a href="<?php echo site_url(); ?>/apply-business-loan.php" class="btn btn3">Appy Now !!</a><br>
 		</div>
 		</div>
 		<!-- /Business loan -->

@@ -54,7 +54,7 @@ function create_post_type() {
 function add_theme_scripts() {
     wp_enqueue_style('style', get_stylesheet_uri(), false, '1.0', all);
     wp_enqueue_style('bootstrap', get_template_directory_uri() . "/css/bootstrap.min.css", false, '1.0', all);
-#    wp_enqueue_script('script', get_stylesheet_directory_uri()."/js/accordian.js",'jquery',1.0,TRUE);
+    wp_enqueue_script('bootstrap-script', get_stylesheet_directory_uri()."/js/bootstrap.min.js",'jquery',1.0,TRUE);
 }
 
 /*
@@ -163,3 +163,31 @@ function is_localhost() {
 add_action('init','register_loanmenu');
 add_action('widgets_init', 'loan_widget');
 #add_action('init', 'loan_logos');
+
+
+/*customizing navbar css*/
+class Radiate_Walker extends Walker_Nav_Menu {
+/*
+    function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
+        $id_field = $this->db_fields['id'];
+
+        if ( is_object( $args[0] ) ) {
+            $args[0]->has_children = !empty( $children_elements[$element->$id_field] );
+        }
+
+        return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+    }*/
+
+    function start_el( &$output, $item, $depth, $args,$id=0 ) {
+
+        $output .= sprintf("\n<li><a href='%s'%s>%s</a>\n",$item->url,($item->object_id === get_the_ID() ) ? ' class="current"' : '',$item->title);	
+
+	
+        /*if ( $args->has_children ) {
+            $item->classes[] = 'dropdown';
+        }*/
+
+      #  parent::start_el(&$output, $item, $depth, $args);
+    }
+}
+
